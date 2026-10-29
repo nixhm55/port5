@@ -84,7 +84,7 @@ function SiteNav() {
 
   return (
     <header className={`site-nav${hidden && !open ? ' is-hidden' : ''}${scrolled ? ' is-scrolled' : ''}`}>
-      <a className="wordmark" href="#top" onClick={closeMenu} aria-label="Yasmi, return to top">Y<span>.</span></a>
+      <a className="wordmark" href="#top" onClick={closeMenu} aria-label="Nisam, return to top">Y<span>.</span></a>
       <nav className={`nav-links${open ? ' is-open' : ''}`} aria-label="Main navigation">
         {sections.map((section, index) => (
           <a href={`#${section.id}`} key={section.id} onClick={closeMenu}>
@@ -112,7 +112,7 @@ function Hero() {
       <div className="hero-title-wrap">
         <div className="hero-kicker">TEACHER <span className="blue-dot" /> AI · ML · PYTHON</div>
         <h1 id="hero-title" className="hero-title">
-          <span className="hero-line"><motion.span initial={reduced ? false : { y: '110%' }} animate={{ y: 0 }} transition={{ duration: reduced ? 0 : 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}>Yasmi</motion.span></span>
+          <span className="hero-line"><motion.span initial={reduced ? false : { y: '110%' }} animate={{ y: 0 }} transition={{ duration: reduced ? 0 : 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}>Nisam</motion.span></span>
           <span className="hero-line hero-line-second"><motion.span initial={reduced ? false : { y: '110%' }} animate={{ y: 0 }} transition={{ duration: reduced ? 0 : 1, delay: 0.23, ease: [0.22, 1, 0.36, 1] }}>teaches<span className="hero-period">.</span></motion.span></span>
         </h1>
       </div>
@@ -153,7 +153,7 @@ function About() {
   return (
     <section className="about-section section-ink" id="about" aria-labelledby="about-title">
       <div className="section-inner">
-        <SectionLabel number="02" light>About Yasmi</SectionLabel>
+        <SectionLabel number="02" light>About Nisam</SectionLabel>
         <div className="about-layout">
           <div className="about-display">
             <Reveal><p className="about-eyebrow">A LITTLE ABOUT THE PERSON BEHIND THE LESSONS</p></Reveal>
@@ -261,7 +261,7 @@ function Demonstrations() {
         <SectionLabel number="05" light>Selected demonstrations</SectionLabel>
         <div className="projects-heading">
           <h2 id="projects-title" className="projects-title">Ideas made<br /><span>visible.</span></h2>
-          <Reveal className="projects-disclaimer" delay={0.16}><span className="demo-stamp">DEMONSTRATIONS<br />NOT CLIENT WORK</span><p>Learning examples and concepts to replace with Yasmi’s actual projects when ready.</p></Reveal>
+          <Reveal className="projects-disclaimer" delay={0.16}><span className="demo-stamp">DEMONSTRATIONS<br />NOT CLIENT WORK</span><p>Learning examples and concepts to replace with Nisam’s actual projects when ready.</p></Reveal>
         </div>
         <div className="project-list">
           {projects.map((project, index) => <Project key={project.number} project={project} index={index}/>) }
@@ -292,8 +292,8 @@ function Teaching() {
       <div className="section-inner">
         <SectionLabel number="06">Teaching & learning</SectionLabel>
         <div className="teaching-layout">
-          <div className="teaching-side"><Reveal><p className="micro-label">A SPACE FOR YASMI’S VOICE</p></Reveal><div className="teaching-rule"/><Reveal delay={0.16}><p className="small-copy">This section is a clearly marked draft—not a claim about classroom practices.</p></Reveal></div>
-          <div className="teaching-main"><h2 id="teaching-title">A teaching<br /><em>approach.</em></h2><Reveal delay={0.15}><p className="teaching-placeholder">[Add Yasmi’s approved description of how she teaches and supports learning.]</p></Reveal><Reveal delay={0.24}><div className="teaching-topics"><span>FOUNDATIONS</span><span>EXAMPLES</span><span>EXPLORATION</span><span>— EDITABLE TOPICS —</span></div></Reveal></div>
+          <div className="teaching-side"><Reveal><p className="micro-label">A SPACE FOR Nisam’S VOICE</p></Reveal><div className="teaching-rule"/><Reveal delay={0.16}><p className="small-copy">This section is a clearly marked draft—not a claim about classroom practices.</p></Reveal></div>
+          <div className="teaching-main"><h2 id="teaching-title">A teaching<br /><em>approach.</em></h2><Reveal delay={0.15}><p className="teaching-placeholder">[Add Nisam’s approved description of how she teaches and supports learning.]</p></Reveal><Reveal delay={0.24}><div className="teaching-topics"><span>FOUNDATIONS</span><span>EXAMPLES</span><span>EXPLORATION</span><span>— EDITABLE TOPICS —</span></div></Reveal></div>
         </div>
       </div>
     </section>
@@ -313,14 +313,14 @@ function Contact() {
           <Reveal><p className="micro-label">HAVE A QUESTION OR AN IDEA?</p></Reveal>
           <h2 id="contact-title">Let’s talk<span>.</span></h2>
         </motion.div>
-        <div className="contact-bottom"><Reveal delay={0.16}><p>[Add Yasmi’s preferred email or professional contact link.]</p></Reveal><span className="contact-index">YASMI · AI / ML / PYTHON<br/>ONE PAGE, MANY QUESTIONS.</span></div>
+        <div className="contact-bottom"><Reveal delay={0.16}><p>[Add Nisam’s preferred email or professional contact link.]</p></Reveal><span className="contact-index">Nisam · AI / ML / PYTHON<br/>ONE PAGE, MANY QUESTIONS.</span></div>
       </div>
     </section>
   )
 }
 
 function SiteFooter() {
-  return <footer className="site-footer"><a href="#top" className="footer-mark">Y.</a><span>TEACHING THE QUESTIONS BEHIND THE CODE</span><a href="#top" className="back-top">BACK TO TOP ↑</a><small>© {new Date().getFullYear()} YASMI</small></footer>
+  return <footer className="site-footer"><a href="#top" className="footer-mark">Y.</a><span>TEACHING THE QUESTIONS BEHIND THE CODE</span><a href="#top" className="back-top">BACK TO TOP ↑</a><small>© {new Date().getFullYear()} Nisam</small></footer>
 }
 
 export function App() {
